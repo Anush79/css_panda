@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -7,31 +8,50 @@
     <title>My panda</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h3>Say Hello 🐼 </h3>
-    <div class = "panda" >
-    <div class="belly"></div>
+    <h1>Say Hello 🐼 </h1>
+    <button>Click Me ✨</button>
+    <div class="panda">
+        <div class="belly"></div>
         <div class="face">
             <div class="ear-l"></div>
-            <div class= "ear-r"></div> 
+            <div class="ear-r"></div>
             <div class="eye-l">
-                <div class="eyeball"><div class="bl"></div></div>
+                <div class="eyeball">
+                    <div class="bl"></div>
+                </div>
             </div>
-            <div class= "eye-r">
-                <div class="eyeball"><div class="bl1"></div></div>
-            </div> 
+            <div class="eye-r">
+                <div class="eyeball">
+                    <div class="bl1"></div>
+                </div>
+            </div>
             <div class="nose"></div>
-            <div class = mouth ><div class = "tongue"></div></div>
+            <div class=mouth>
+                <div class="tongue"></div>
+            </div>
         </div>
-        <div class = "hand-l"></div>
-        <div class = "hand-r"></div>
-        <div class = "leg-l"></div>
-        <div class = "leg-r"></div>
-        <div class= "shadow"></div>
-    </div>   
-    <audio src="hello.mp3" autoplay></audio>
-    <footer>Made by <a href="https://www.linkedin.com/in/anushka-jaiswal-46258918a/">Anushka</a></footer>
+        <div class="hand-l"></div>
+        <div class="hand-r"></div>
+        <div class="leg-l"></div>
+        <div class="leg-r"></div>
+        <div class="shadow"></div>
+    </div>
+    <audio src="hello.mp3"> </audio>
+    <footer>Made with 💖 by <a href="https://www.linkedin.com/in/anushka-jaiswal-46258918a/">Anushka</a></footer>
 
-    <script>window.onload = function() { document.getElementsByTagName("audio").play(); }</script>
+    <script>
+        const btn = document.querySelector("button");
+        btn.addEventListener("click", function () {
+            document.querySelector(".mouth").style.animation = "speak 0.7s 14";
+            document.querySelector(".panda").style.animation = "pandamove 15s ";
+
+            document.querySelector("audio").play();
+            btn.style.display = "none";
+
+        })
+    </script>
 </body>
+
 </html>
