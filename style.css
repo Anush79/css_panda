@@ -239,7 +239,7 @@ border-radius: 0px 0px 40px 40px;
     transform: rotate(90deg);
     bottom: 28px;
     right:12px;
-    animation:wave 0.5s 25;
+    animation:wave 0.5s 60;
     transform-origin: top;
 }
 .hand-r{
