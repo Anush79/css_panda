@@ -1,10 +1,11 @@
 body{
     background: url("https://i.pinimg.com/originals/9a/b6/bc/9ab6bcc17fb207fbede9c7ffb998cabc.jpg")no-repeat center center fixed;
-    -webkit-background-size:cover;
+    background-size:cover;
     background-repeat: no-repeat;
     overflow: hidden;
     color:white;
 }
+
 .say{
     position: absolute;
     height:70px;
@@ -30,14 +31,14 @@ body{
 .say:hover{visibility:visible;}
 .panda{
     position:absolute;
-    top: 70%;
+    top: 40%;
     height: 120px;
     left:43%;
     width: 80px;
     background-color:black;
     border:7px solid black;
     border-radius: 30%;
-    animation: pandamove 5s 1;
+    /* animation: pandamove 5s 1; */
     animation-direction:alternate;
 }
 
@@ -111,11 +112,11 @@ border-radius: 0px 0px 40px 40px;
     height:14px;
     width: 14px;
 
--webkit-transform-origin: 50%;
--webkit-animation: blink 3s infinite;
+    transform-origin: 50%;
+    animation: blink 3s infinite;
 }
 
-@-webkit-keyframes blink {
+@keyframes blink {
   0%
   {
      transform: scale(1, .05);
@@ -176,7 +177,7 @@ border-radius: 0px 0px 40px 40px;
     overflow: hidden;
     z-index: 1;
     transform:scale(0.35);
-    animation: speak 0.7s 14 ;
+    /* animation: speak 0.7s 14 ; */
   }
   
 @keyframes speak {
@@ -284,3 +285,12 @@ footer {
 }
 footer a{ text-decoration:none;
     color:white;}
+
+button{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin:20px;
+    padding:10px;
+    font-size: large;
+    border: none;
+    border-radius: 50px;
+}
